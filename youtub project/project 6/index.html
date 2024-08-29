@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+
+    <script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.js"></script>
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <section>
+        <div class="container">
+            <div class="tab-menu">
+                <ul>
+                    <li class="active" data-filter="*">All Products</li>
+                    <li data-filter=".cloth">Cloth</li>
+                    <li data-filter=".watch">Watch</li>
+                    <li data-filter=".shoos">Shoos</li>
+                    <li data-filter=".belt">Belt</li>
+                </ul>
+            </div>
+            <div class="tab-item">
+                <div class="item cloth">
+                    <img src="../img/cloth1.jpeg">
+                    <img src="../img/cloth2.jpeg">
+                </div>
+
+                <div class="item watch">
+                    <img src="../img/watch1.jpg">
+                    <img src="../img/watch2.webp">
+                </div>
+
+                <div class="item shoos">
+                    <img src="../img/shoos.webp">
+                </div>
+                <div class="item belt">
+                    <img src="../img/belt1.jpg">
+                    <img src="../img/belt2.webp">
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <script>
+        $(document).ready(function () {
+            // Initialize Isotope
+            var $grid = $('.tab-item').isotope({
+                itemSelector: '.item',
+                layoutMode: 'fitRows'
+            });
+
+            // Filter items on button click
+            $('.tab-menu ul li').click(function () {
+                $('.tab-menu ul li').removeClass('active');
+                $(this).addClass('active');
+
+                var selector = $(this).attr('data-filter');
+                $grid.isotope({ filter: selector });
+                return false;
+            });
+        });
+    </script>
+</body>
+
+</html>

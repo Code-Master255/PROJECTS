@@ -1,0 +1,39 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #000;
+}
+.container .tab-menu ul{
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    padding: 50px 0;    
+}
+.container .tab-menu ul li{
+    list-style: none;
+    cursor: pointer;
+    text-align: center;
+    padding: 5px 0;
+    height: 20px;
+    width: 90px;
+    border: 2px solid rgb(194, 0, 0);
+    color: #fff;
+}
+.container .tab-menu ul li:hover{
+    background-color: rgb(255, 37, 37);
+}
+.container .tab-menu ul .active{
+    background-color: rgb(255, 37, 37);
+}
+img{
+    height: 300px;
+    width: 300px;
+}
+.tab-item{
+    display: flex;
+}

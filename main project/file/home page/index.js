@@ -11,14 +11,21 @@ $(document).ready(function(){
     });
 
 
-    var $btn = $('.tab-manu');
-    var $item = $('.tab-item');
-
-    $btn.each(function(){
-      $btn.on('click','button',function(){
-        var selector = $(this).attr('data-filter');
-        $item.isotope({filter:selector});
-      });
+    $('.tab-item').isotope({
+      // options
+      itemSelector: '.item',
+      layoutMode: 'fitRows'
     });
+
+  
+
+    $('.tab-manu li').click(function(){
+      $('.tab-manu li').removeClass('active');
+      $(this).addClass('active');
+      
+      var selector = $(this).attr('data-filter');
+      $('.tab-item').isotope({filter:selector});
+      return false;
+    }); 
 
 });

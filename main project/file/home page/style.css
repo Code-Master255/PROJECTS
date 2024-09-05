@@ -137,13 +137,53 @@ header .icon a i {
         font-style: italic;
     }
 }
+.home .contant p{
+    animation: animat2 1s linear;
+    position: relative;
+    right: 0;
+    opacity: 1;
+}
+@keyframes animat2{
+    0%{
+        position: relative;
+        right: 570px;
+        opacity: 0;
+    }
+    100%{
+        position: relative;
+        right: 0px;
+        opacity: 1;
+    }
+}
+.home .contant button{
+    height: 60px;
+    width: 200px;
+    border-radius: 28px;
+    background-color: rgb(0, 183, 255);
+    color: #fff;
+    font-size: 20px;
+    font-weight: 600;
+    position: relative;
+    top: 50px;
+    cursor: pointer;
+    opacity: 1;
+    animation: bnt 2s linear;
+}
+@keyframes bnt{
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
 
 .home .img img {
     margin-left: -90px;
     position: relative;
-    bottom: 60px;
+
     z-index: -1;
-    height: 68rem;
+    height: 75rem;
     width: 60rem;
 }
 .page1{
@@ -164,17 +204,42 @@ header .icon a i {
     display: flex;
     gap: 15px;
     padding: 0 10px;
+    position: relative;
 }
 .page1 .main .image .contant{
     font-size: 30px;
     margin: -10px;
 }
 .page1 .main .image img{
-    height: 330px;
+    height: 350px;
     width: 300px;
 }
+.page1 .main .image .overflow{
+    height: 350px;
+    width: 520px;
+    background-color: rgb(0, 140, 255);
+    position: absolute;
+    left: 0;
+    opacity: 0;
+    transition: 0.5s;
+}
+.page1 .main .image .overflow:hover{
+    opacity: 0.7;
+}
+.page1 .main .image .overflow h1{
+    color: #fff;
+    opacity: 1;
+    font-size: 35px;
+    position: absolute;
+    font-weight: 100;
+    bottom: 50px;
+    left: 50px;
+    border-bottom: 2px solid #fff;
+    width: auto;
+}
+
 .page2{
-    height: 100vh;
+    height: 150vh;
 }
 .page2 .tital{
     font-size: 38px;
@@ -198,36 +263,105 @@ header .icon a i {
 .page2 .container .tab-manu{
     list-style: none;
     display: flex;
-    gap: 20px;
+    gap: 50px;
     font-size: 30px;
 }
 .page2 .container .tab-manu li{
     cursor: pointer;
     text-align: center;
     height: 40px;
-    width: 140px;
+    width: auto;
 }
 .page2 .container .tab-manu li:hover{
     height: 40px;
-    width: 140px;
+    width: auto;
     border-bottom: 2px solid #000;
-    text-align: center;
 }
 .container .tab-manu .active{
     height: 40px;
-    width: 140px;
+    width: auto;
     border-bottom: 2px solid #000;
     text-align: center;
 }
 .tab-item img{
     height: 300px;
     width: 300px;
+    border: 2px solid #000;
 }
-.tab-item{
-    display: flex;
-    gap: 20px;
+
+
+.accessories{
+    padding-left: 20px;
+}
+.belt{
+    padding-left: 20px;
+}
+.watches{
+    padding-left: 20px;
+}
+.tab-item .button{
+    position: relative;
+    top: 20%;
+    left: 2%;
+}
+.tab-item .top{
+    position: relative;
+    left: 2%;
+}
+
+
+.tab-item .prise{
+    height: 60vh;
+    width: 304.5px;
+    background-color: #fff;
+    border: 3px solid #000;
 }
 .tab-item .item{
     display: flex;
     gap: 20px;
 }
+
+
+
+
+/* .footer{
+    position: relative;
+    height: 45vh;
+    width: 98.9vw;
+    background-color: #000;
+}
+.footer .container{
+    display: flex;
+    justify-content: space-around;
+    position: relative;
+    top: 20%;
+}
+.footer .container ul .tital h1{
+    font-size: 30px;
+    position: relative;
+    bottom: 40px;
+}
+.footer .container ul{
+    color: #fff;
+    font-size: 30px;
+    line-height: 50px;
+}
+.footer .container ul p{
+    font-size: 25px;
+}
+.footer .container ul li{
+    font-size: 25px;
+}
+.footer .container ul button{
+    height: 60px;
+    width: 200px;
+    background-color: rgb(0, 183, 255);
+    border-radius: 30px;
+    position: relative;
+    top: 10%;
+}
+.footer .container ul input{
+    height: 50px;
+    width: 300px;
+    font-size: 20px;
+} */

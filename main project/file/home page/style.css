@@ -239,7 +239,7 @@ header .icon a i {
 }
 
 .page2{
-    height: 180vh;
+    height: 150vh;
 }
 .page2 .tital{
     font-size: 38px;
@@ -300,20 +300,15 @@ header .icon a i {
     padding-left: 20px;
 }
 .tab-item .button{
-    position: absolute;
+    position: relative;
+    top: 20%;
     left: 2%;
-    top: 60px;
 }
 .tab-item .top{
-    position: absolute;
-    top: 30px;
+    position: relative;
     left: 2%;
 }
 
-.tab-item{
-    position: relative;
-    width: 96.5vw;
-}
 
 .tab-item .prise{
     height: 60vh;
@@ -324,20 +319,6 @@ header .icon a i {
 .tab-item .item{
     display: flex;
     gap: 20px;
-}
-.tab-item .item .prise .contant{
-    font-size: 25px;
-}
-.tab-item .item .prise .contant .pri{
-    display: flex;
-    align-items: center;
-    gap: 20px;
-}
-.tab-item .item .prise .contant .pri span{
-    font-size: 30px;
-    border-bottom: 1px solid #000;
-    margin-top: -15px;
-    height: 20px;
 }
 
 

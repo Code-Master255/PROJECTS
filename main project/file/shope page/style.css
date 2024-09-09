@@ -99,21 +99,17 @@ header .icon a i {
 }
 
 .page2{
-    
-    position: relative;
-    top: 100px;
-    width: 94vw;
-    height: 150vh;
+    height: 200vh;
 }
 .page2 .tital{
     font-size: 38px;
-    padding: 50px 140px;
-    width: 92vw;
+    padding-top: 10%;
+    padding-left: 6.5%;
 }
 .page2 .container{
     display: flex;
     justify-content: space-between;
-    padding: 50px 132px;
+    padding: 40px 132px;
 }
 .page2 .container .filter{
     display: flex;
@@ -149,30 +145,70 @@ header .icon a i {
     text-align: center;
 }
 .tab-item img{
-    height: 350px;
+    height: 300px;
     width: 300px;
+    border: 2px solid #000;
 }
-.tab-item{
+
+
+.accessories{
+    padding-left: 20px;
+}
+.belt{
+    padding-left: 20px;
+}
+.watches{
+    padding-left: 20px;
+}
+.tab-item .button{
+    position: absolute;
+    left: 2%;
+    top: 60px;
+}
+.tab-item .top{
     position: absolute;
     top: 30px;
-    left: 90px;
+    left: 2%;
 }
-.tab-item .perent2{ 
-    position: absolute;
-    top: 50px;
+
+.tab-item{
+    position: relative;
+    width: 96.9vw;
 }
-.tab-item .perent2 .shoos{
+
+.tab-item .prise{
+    height: 55vh;
+    width: 304.5px;
+    background-color: #fff;
+    border: 3px solid #000;
+}
+.tab-item .item{
     display: flex;
+    gap: 20px;
 }
-.tab-item .perent2 .watches{    
+
+.tab-item .item .prise .contant{
+    font-size: 25px;
+    padding: 40px 10px ;
+}
+.tab-item .item .prise .contant .pri{
     display: flex;
+    align-items: center;
+    gap: 20px;
+    padding: 30px 0;
 }
-.button{
+.tab-item .item .prise .contant .pri span{
+    font-size: 30px;
+    border-bottom: 1px solid #000;
+    margin-top: -15px;
+    height: 20px;
+}
+.btn{
     text-align: center;
     position: relative;
-    top: 55rem;
+    top: 15rem;
 }
-.button button{
+.btn button{
     height: 5rem;
     width: 18rem;
     border-radius: 40px;
